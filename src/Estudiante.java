@@ -1,50 +1,11 @@
 import java.util.Date;
 
-class Estudiante {
-    private int id;
-    private String nombre;
-    private String apellido;
-    private Date fechaDeNacimiento;
+class Estudiante extends Persona {
     private String estado;
 
     public Estudiante(int id, String nombre, String apellido, Date fechaDeNacimiento, String estado) {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fechaDeNacimiento = fechaDeNacimiento;
+        super(id, nombre, apellido, fechaDeNacimiento);
         this.estado = estado;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public Date getFechaDeNacimiento() {
-        return fechaDeNacimiento;
-    }
-
-    public void setFechaDeNacimiento(Date fechaDeNacimiento) {
-        this.fechaDeNacimiento = fechaDeNacimiento;
     }
 
     public String getEstado() {
@@ -55,5 +16,5 @@ class Estudiante {
         this.estado = estado;
     }
 
-    
+   
 }
